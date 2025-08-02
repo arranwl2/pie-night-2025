@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pie Night 2025</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Password Screen -->
+    <div id="passwordScreen" class="password-screen">
+        <div id="passwordBox" class="password-box">
+            <h2>Please enter the password</h2>
+            <input type="password" id="passwordInput" placeholder="Enter password">
+            <button id="submitPassword">Submit</button>
+            <div id="passwordError" class="error-message"></div>
+        </div>
+    </div>
+
+    <!-- Main Content (initially hidden) -->
+    <div id="mainContent" class="main-content hidden">
+        <div id="contentBox" class="content-box">
+            <h1 id="welcomeTitle" class="welcome-title">Welcome to Pie Night 2025!</h1>
+            <p id="eventDate" class="event-date">Date: Sunday October 5th 2025</p>
+            <p id="eventDescription" class="event-description">Please fill out the following information, and we will assign you either a sweet or savoury pie to bring</p>
+            
+            <form id="registrationForm" class="registration-form">
+                <div class="form-group">
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" name="firstName" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" name="lastName" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <button type="submit" id="submitForm">Submit</button>
+            </form>
+            
+            <div id="assignmentResult" class="assignment-result"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
